@@ -7,6 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.catalina.User;
+import org.apache.jasper.tagplugins.jstl.core.If;
+
 import bean.WebUser;
 
 /**
@@ -42,20 +45,17 @@ public class LoginServlet extends HttpServlet {
 		WebUser u = new WebUser();
 		u.setUsername(username);
 		u.setPassword(password);
+		
+//		User check
+//		Loading user records from the database and check the password is right or not
+//		If right then reading the u.setLike = data.like;
+//								  u.setHistroy = data.history;
 
 		
 		request.setAttribute("USER", u);
 		request.getRequestDispatcher("MusicPlayer.jsp").forward(request, response);
 		
-//		if(username.equals("tom")) {
-//		response.sendRedirect("http://www.bing.com");
-//	}
-//	else {
-//		response.sendRedirect("http://www.google.com");
-//	}
-//	
-//	PrintWriter writer = response.getWriter();
-//	writer.append(username + "/" + password);
+
 	}
 
 }
