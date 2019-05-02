@@ -4,8 +4,11 @@
 <html>
 <head lang="en">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
 	<title>SingPicture</title>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css"/>
+	
 </head>
 
 <jsp:useBean id="USER" class="bean.WebUser" scope="request"></jsp:useBean>
@@ -19,7 +22,7 @@
 
 		<section id="music-content">
 			<div id="album-picture">
-				<img src="art/Depeche Mode - Heaven (Freemasons Mix).jpg" id="picture">
+				<img src="res/cover/Depeche Mode - Heaven (Freemasons Mix).jpg" id="picture">
 			</div>
 
 			<span id="add-music" title="Add Music"><i class="fa fa-upload" aria-hidden="true"></i></span>
@@ -53,8 +56,8 @@
 		<aside>
 			<div><progress value="0" max="100" id="music-progress"></progress></div>
 			<span id="current-time">0:00</span><span id="duration">/0:00</span>
-			<img src="res/loop.png" id="play-style-loop" title="Loop Play" class="">	
-			<img src="res/random.png" id="play-style-random" title="Random Play" class="hidden">	
+			<img src="res/component/loop.png" id="play-style-loop" title="Loop Play" class="">	
+			<img src="res/component/random.png" id="play-style-random" title="Random Play" class="hidden">	
 		</aside>
 	</article>
 
