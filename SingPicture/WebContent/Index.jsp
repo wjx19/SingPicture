@@ -8,9 +8,9 @@
 </head>
 <body>
 
-<form action="#" method="post">
-Username: <input type="text" name="username" Placeholder="Username" /></br>
-Password: <input type="text" name="password" Placeholder="Password" /></br>
+<form action="Login" method="post">
+	Username: <input type="text" name="username" Placeholder="Username" /></br>
+	Password: <input type="password" name="password" Placeholder="Password" /></br>
 <input type="submit" name="login" Placeholder="Login" />
 </form>
 
